@@ -1,0 +1,12 @@
+<plugin name='redis-console' version='0.1' grailsVersion='2.5 &gt; *'>
+  <author>Your name</author>
+  <title>Redis Console Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/redis-console</documentation>
+  <type>RedisConsoleGrailsPlugin</type>
+  <resources>
+    <resource>grails.plugin.redis.RedisConsoleController</resource>
+    <resource>grails.plugin.redis.RedisConsoleService</resource>
+  </resources>
+</plugin>

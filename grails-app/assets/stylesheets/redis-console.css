@@ -1,0 +1,36 @@
+html, body {
+    background-color: #151515;
+}
+
+div.container {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.btn {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #0872E4;
+    color: white;
+    border-radius: 10px;
+    margin-left: 95%;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100%;
+    white-space: normal;
+    text-align: justify;
+    background-color: #dddddd;
+    border-radius: 7px;
+}
+
+textarea.results {
+    height: 80%;
+}
