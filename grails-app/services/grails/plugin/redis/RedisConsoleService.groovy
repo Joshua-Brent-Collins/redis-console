@@ -1,15 +1,15 @@
 package grails.plugin.redis
 
-import redis.clients.jedis.*
+import redis.clients.jedis.Jedis
 import redis.clients.jedis.Protocol.Command as COMMAND
 
 class RedisConsoleService {
 
-    def redisConnection
+    static transactional = false
 
-    def parseCommand(def connection, def commands) {
+    def parseCommand(connection, commands) {
 
-        redisConnection = new Jedis(connection)
+        def redisConnection = new Jedis(connection)
 
         def cmd = commands[0]
         def argList = commands.drop(1)
@@ -33,5 +33,4 @@ class RedisConsoleService {
         redisConnection.close()
         return commandResults
     }
-
 }
