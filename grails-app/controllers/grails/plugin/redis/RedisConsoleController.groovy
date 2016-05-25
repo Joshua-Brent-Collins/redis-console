@@ -1,12 +1,11 @@
 package grails.plugin.redis
-import grails.converters.JSON
 
 class RedisConsoleController {
 
     def redisConsoleService
 
     def index() {
-            render(view: "redisConsole")
+        render(view: "redisConsole")
     }
 
     def parseCommand() {
