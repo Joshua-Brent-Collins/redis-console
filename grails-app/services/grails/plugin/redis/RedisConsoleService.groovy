@@ -7,11 +7,9 @@ class RedisConsoleService {
 
     static transactional = false
 
-    def redisConnection
-
     def parseCommand(connection, commands) {
 
-        redisConnection = new Jedis(connection)
+        def redisConnection = new Jedis(connection)
 
         def cmd = commands[0]
         def argList = commands.drop(1)
